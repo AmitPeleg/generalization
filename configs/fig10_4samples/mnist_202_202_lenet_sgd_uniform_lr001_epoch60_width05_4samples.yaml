@@ -1,0 +1,25 @@
+dataset:
+  mnistcifar:
+    num_classes: 2
+  name: mnist
+distributed:
+  data_seed: 202
+  num_samples: '4'
+  permutation_seed: 202
+model:
+  arch: lenet
+  batch_size: 2
+  init: uniform
+  lenet:
+    width: 3/6
+  model_count_times_batch_size: 4000
+optimizer:
+  epochs: 60
+  lr: 0.001
+  name: SGD
+output:
+  folder: output/mnist/mnist_202_202_lenet_sgd_uniform_lr001_epoch60_width05_4samples
+  load_models_from_previous_num_of_samples: false
+  save_predictions: true
+  save_weights: true
+  successful_model_count: 2000

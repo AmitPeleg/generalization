@@ -1,0 +1,22 @@
+dataset:
+  mnistcifar:
+    num_classes: 2
+  name: mnist
+distributed:
+  data_seed: 202
+  num_samples: 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32
+  permutation_seed: 201
+model:
+  arch: resnet4
+  init: uniform
+  lenet:
+    width: 4/6
+  model_count_times_batch_size: 100000
+optimizer:
+  name: guess
+output:
+  folder: output/mnist/mnist_202_201_resnet_guess_uniform_width066_multi_samples
+  load_models_from_previous_num_of_samples: false
+  save_predictions: true
+  save_weights: true
+  successful_model_count: 100

@@ -1,0 +1,25 @@
+name: generalization
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=1.10
+  - cudatoolkit=11.3
+  - torchvision=0.11
+  - numpy=1.26
+  - mkl=2024.0
+  - pip
+  - scipy
+  - tabulate
+  - tqdm
+  - pyyaml
+  - umap-learn
+  - natsort
+  - pip:
+    - fastargs
+    - terminaltables
+    - matplotlib
+
+

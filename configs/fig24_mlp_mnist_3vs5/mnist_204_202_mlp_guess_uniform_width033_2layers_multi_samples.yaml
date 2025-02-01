@@ -1,0 +1,24 @@
+dataset:
+  mnistcifar:
+    num_classes: 2
+  name: mnist
+distributed:
+  data_seed: 204
+  num_samples: 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32
+  permutation_seed: 202
+model:
+  arch: mlp
+  init: uniform
+  lenet:
+    fc_layers: 2,3,4
+    pooling_layers: 0
+    width: 2/6
+  model_count_times_batch_size: 1000000
+optimizer:
+  name: guess
+output:
+  folder: output/mnist/mnist_204_202_mlp_guess_uniform_width033_2layers_multi_samples
+  load_models_from_previous_num_of_samples: true
+  save_predictions: true
+  save_weights: true
+  successful_model_count: 100

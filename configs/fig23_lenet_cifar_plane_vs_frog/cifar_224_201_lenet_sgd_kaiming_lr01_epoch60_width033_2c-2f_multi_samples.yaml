@@ -1,0 +1,27 @@
+dataset:
+  mnistcifar:
+    num_classes: 2
+  name: cifar10
+distributed:
+  data_seed: 224
+  num_samples: 2,4,6,8,10,12,14,16,18,20,22,24
+  permutation_seed: 201
+model:
+  arch: lenet_more_layers
+  batch_size: 2
+  init: kaiming
+  lenet:
+    conv_layers: 0,1
+    fc_layers: 1,2
+    width: 2/6
+  model_count_times_batch_size: 200
+optimizer:
+  epochs: 60
+  lr: 0.01
+  name: SGD
+output:
+  folder: output/cifar10/cifar_224_201_lenet_sgd_kaiming_lr01_epoch60_width033_2c-2f_multi_samples
+  load_models_from_previous_num_of_samples: false
+  save_predictions: true
+  save_weights: true
+  successful_model_count: 100

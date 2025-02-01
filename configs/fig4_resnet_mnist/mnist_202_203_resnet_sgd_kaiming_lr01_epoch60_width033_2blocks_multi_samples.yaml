@@ -1,0 +1,26 @@
+dataset:
+  mnistcifar:
+    num_classes: 2
+  name: mnist
+distributed:
+  data_seed: 202
+  num_samples: 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32
+  permutation_seed: 203
+model:
+  arch: resnet4
+  batch_size: 2
+  init: kaiming
+  lenet:
+    rem_layers: layer1
+    width: 2/6
+  model_count_times_batch_size: 200
+optimizer:
+  epochs: 60
+  lr: 0.01
+  name: SGD
+output:
+  folder: output/mnist/mnist_202_203_resnet_sgd_kaiming_lr01_epoch60_width033_2blocks_multi_samples
+  load_models_from_previous_num_of_samples: false
+  save_predictions: true
+  save_weights: true
+  successful_model_count: 100
