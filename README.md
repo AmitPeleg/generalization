@@ -24,7 +24,7 @@ conda activate generalization
 
 ## Configs
 
-The different configurations to reproduce the figures in the paper are in the `configs` folder. The configuration files are in `yaml` format. The configuration files are named according to the figure they reproduce. For example, the configs in `configs/fig1/` reproduce Figure 1 in the paper.
+The different configurations to reproduce the figures in the paper are in the [`configs`](configs) folder. The configuration files are in `yaml` format. The configuration files are named according to the figure they reproduce. For example, the configs in [`configs/fig1/`](configs/fig1/) reproduce Figure 1 in the paper.
 
 ## Experiments
 ### Single experiment
